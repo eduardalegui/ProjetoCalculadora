@@ -8,29 +8,49 @@
 
 <body>
 
-    <h1 class="corpo">CALCULADORA</h2>
+    <h1 class="titulo">CALCULADORA</h1>
+    <hr>
 
         <div class="corpo">
-            <div>
-                <div class="resultado">
-                    <h1></h1>
-                </div>
-                <div class="numerosl1">
-                    <button onclick="insert('1')">1</button><button>2</button><button>3</button><button>:</button>
-                </div>
-                <div class="numerosl2">
-                    <button>4</button><button>5</button><button>6</button><button>X</button>
-                </div>
-                <div class="numerosl3">
-                    <button>7</button><button>8</button><button>9</button><button>-</button>
-                </div>
-                <div class="numerosl4">
-                    <button>C</button><button>0</button><button>=</button><button>+</button>
-                </div>
-            </div>
-        </div>
+            <div><p id="calculo">0</p></div>
+            <div><p id="resposta">0</p></div>
+        <p class="fundo"></P>
 
-        
+            <table>
+                <tr>
+                    <td><button onclick="clean()">C</button></td>
+                    <td><button onclick="back()"><</button></td>
+                    <td><button id="/" onclick="insert('/')">/</button></td>
+                    <td><button id="*" onclick="insert('*')">*</button></td>
+                </tr>
+
+                <tr>
+                    <td><button onclick="insert(1)">1</button></td>
+                    <td><button onclick="insert(2)">2</button></td>
+                    <td><button onclick="insert(3)">3</button></td>
+                    <td><button id="-" onclick="insert('-')">-</button></td>
+                </tr>
+
+                <tr>
+                    <td><button onclick="insert(4)">4</button></td>
+                    <td><button onclick="insert(5)">5</button></td>
+                    <td><button onclick="insert(6)">6</button></td>
+                    <td><button id="+" onclick="insert('+')">+</button></td>
+                </tr>
+                
+                <tr>
+                    <td><button onclick="insert(7)">7</button></td>
+                    <td><button onclick="insert(8)">8</button></td>
+                    <td><button onclick="insert(9)">9</button></td>
+                    <td><button id="=" onclick="calcular()">=</button></td>
+                </tr>
+
+                <tr>
+                    <td><button onclick="insert('.')">,</button></td>
+                    <td><button onclick="insert(0)">0</button></td>
+                
+                </tr>
+                
 
 </body>
 
