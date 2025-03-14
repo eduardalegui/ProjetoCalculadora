@@ -20,3 +20,29 @@ function calcular(){
     document.getElementById('resposta').innerHTML= texto;
     document.getElementById('calculo').innerHTML= '0';
 }
+document.addEventListener('keydown', function(event) {
+    event.preventDefault();
+
+   
+    var key = event.key;
+
+    if (key >= '0' && key <= '9') {
+        insert(key);
+    } else if (key === '/') {
+        insert('/');
+    } else if (key === '*') {
+        insert('*');
+    } else if (key === '-') {
+        insert('-');
+    } else if (key === '+') {
+        insert('+');
+    } else if (key === '.') {
+        insert('.');
+    } else if (key === 'Backspace') {
+        back();
+    } else if (key === 'Enter' || key === '=') {
+        calcular();
+    } else if (key === 'c' || key === 'C') {
+        clean();
+    }
+});

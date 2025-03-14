@@ -9,26 +9,32 @@
 
 }
 
+.corpo{
+    width: 0%;
+    align-items: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
 .container-calculadora{
     display: flex;
     flex-direction: column;
     align-items: center;
+   
 }
 
-.corpo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
 
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-family: Arial, Helvetica, sans-serif;
 
-}
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: rgb(8, 90, 8);
     align-items: center;
+    
 
 }
 
@@ -40,7 +46,7 @@ body{
 
 .calcular{
     font-size: 30px;
-    text-align: start ;
+    text-align: center;
 
 }
 
